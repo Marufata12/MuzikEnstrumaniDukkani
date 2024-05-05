@@ -1,33 +1,39 @@
-Kişisel Sağlık Takip Uygulaması Kullanım Kılavuzu
-Bu kullanım kılavuzu, Kişisel Sağlık Takip uygulamasının nasıl kullanılacağına dair adım adım talimatlar içermektedir. Uygulamayı başarıyla kullanabilmek için aşağıdaki adımları takip edebilirsiniz:
+Enstrüman Dükkanı Uygulaması Kullanım Kılavuzu
+Bu kullanım kılavuzu, Enstrüman Dükkanı uygulamasının nasıl kullanılacağına dair adım adım talimatlar içermektedir. Uygulamayı başarıyla kullanabilmek için aşağıdaki adımları takip edebilirsiniz:
 
-1. Uygulamayı Başlatma ve Giriş Yapma
-Adım 1: Uygulamayı başlatmak için main.py dosyasını çalıştırın.
+1. Enstrüman Dükkanı Uygulamasını Başlatma
+Uygulamayı başlatmak için main.py dosyasını çalıştırın. Bu, Ana Sayfa penceresini açacaktır.
+
 bash
 Copy code
 python main.py
-Adım 2: Karşınıza giriş ekranı gelecektir. Burada aşağıdaki adımları izleyin:
-Kullanıcı Adı: "admin"
-Şifre: "admin"
-Adım 3: Giriş bilgilerini doğru girdiğinizde, uygulama ana penceresine yönlendirileceksiniz.
-2. Kişisel Bilgilerin Girişi ve Endeks Hesaplama
-Adım 1: Ana pencerede, kişisel bilgilerinizi girin:
-Boy (cm): Kendi boyunuzu santimetre cinsinden girin.
-Kilo (kg): Kendi kilonuzu kilogram cinsinden girin.
-Yaş: Yaşınızı girin.
-Cinsiyet: Cinsiyetinizi (örneğin, "Erkek" veya "Kadın") belirtin.
-Adım 2: "Endeks Hesapla" düğmesine tıklayarak vücut kitle endeksinizi (BMI) hesaplayın.
-Hesaplanan endeks bilgisi ve cinsiyet bilgisi bir bilgi iletişim kutusunda görüntülenecektir.
-3. Önerilen Egzersiz Miktarının Görüntülenmesi
-Adım 1: Endeks hesaplandıktan sonra, "Egzersizler" düğmesine tıklayın.
-Bu düğme, vücut kitle endeksinize göre önerilen egzersiz miktarını içeren bir sayfayı açacaktır.
-Adım 2: Egzersiz sayfasında, önerilen egzersiz türleri ve miktarları görüntülenecektir.
-4. Çıkış
-Uygulamayı kullanımınızı tamamladıktan sonra, pencereyi kapatabilir veya uygulamayı sonlandırabilirsiniz.
+2. Enstrüman Ekleme
+Ana Sayfa'da, "Enstrüman Ekle" butonuna tıklayarak yeni bir enstrüman ekleyebilirsiniz. Açılan pencerede:
+
+"Enstrüman Adı": Yeni enstrümanın adını girin.
+"Fiyat": Enstrümanın fiyatını girin.
+"Stok Sayısı": Enstrümanın mevcut stok sayısını belirtin.
+"Satış Sayısı": Enstrümanın daha önce gerçekleşmiş satış sayısını girin.
+Tüm bilgileri doldurduktan sonra "Kaydet" düğmesine basarak enstrümanı kaydedin. Eğer girdiğiniz bilgiler geçerli değilse, uyarı mesajlarıyla bilgilendirileceksiniz.
+
+3. Enstrümanları Görüntüleme ve İşlem Yapma
+Ana Sayfa'da, mevcut enstrümanları listeleyen bir tablo bulunmaktadır. Bu tablodaki herhangi bir satıra tıkladığınızda, ilgili enstrümanın bilgilerini görmek ve düzenlemek için "İŞLEM" butonuna tıklayabilirsiniz.
+
+"İŞLEM" butonuna tıkladığınızda, seçili enstrümanın bilgileri "İşlem Sayfası"nda görüntülenir.
+"Güncelle" düğmesini kullanarak enstrüman bilgilerini güncelleyebilirsiniz.
+"Sil" düğmesini kullanarak enstrümanı veritabanından silebilirsiniz.
+4. Müşteri Bilgilerini Görüntüleme
+Ana Sayfa'da, "Müşteri Bilgileri" butonuna tıklayarak müşteri bilgilerini görüntüleyebilirsiniz. Açılan pencerede:
+
+"Arama": Müşteri adına göre arama yapabilirsiniz. Arama kutusuna müşteri adını girerek tabloda filtreleme yapabilirsiniz.
+Müşteri tablosunda, müşteri adı, soyadı, aldığı enstrüman, adedi, toplam tutarı ve iletişim bilgileri listelenir.
+
+
 
 
 KAYNAK KODLARININ BULUNDUĞU SAYFALAR:
-main.py 
-login_window.py
-main_window.py
-
+main.py
+ykayit.py
+islem.py
+mbilgi.py
+veritabani.py
